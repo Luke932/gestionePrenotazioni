@@ -58,6 +58,7 @@ public class Runner implements CommandLineRunner {
 			String codice = faker.regexify("[A-Za-z0-9]{8}");
 			NewEdificioPayload edificio = new NewEdificioPayload(nomeEdificio, codice);
 			edif.save(edificio);
+			System.out.println(edificio);
 		}
 
 	}
